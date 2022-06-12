@@ -5,10 +5,10 @@ services:
     image: mysql:5.7
     container_name: db
     environment:
-      MYSQL_ROOT_PASSWORD: 1234
-      MYSQL_DATABASE: test
-      MYSQL_USER: bittu
-      MYSQL_PASSWORD: 1234
+      MYSQL_ROOT_PASSWORD: kccitm.edu.in1
+      MYSQL_DATABASE: kccStudent
+      MYSQL_USER: kcc_student
+      MYSQL_PASSWORD: kccitm.edu.in1
     ports:
       - "3306:3306"
   phpmyadmin:
