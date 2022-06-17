@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 // var modelLogin = require("../model/login")
 var mysql = require('mysql');
+const { result } = require('underscore');
 // const { getLoginPost } = require('../controller/controller');
 // const func = require('../model/login');
 
@@ -29,12 +30,15 @@ router.get('/', function (req, res, next) {
 });
 
 router.get('/getLogin', function (req, res, next) {
+  console.log( _.map([1, 2, 3], function(num){ return num * 3; }));
+  
 
 
   con.query("select * from SUSHMIT", function (err, result) {
     if (err) throw err;
-    console.log(result);
-    res.render('login', { "data": result })
+    console.log( _.map(result,function(data){return data.id}));
+    res.render('login', {"data" : result})
+    
   });
 
 });
