@@ -16,7 +16,7 @@ var con = mysql.createConnection({
 con.connect()
 
 router.get('/', function (req, res, next) {
-  console.log("Nitya");
+  console.log("sushmit");
   con.connect(function (err) {
     console.log("HARSH")
     if (err) console.log("err");
