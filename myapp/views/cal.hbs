@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CALC</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>           
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
+
 <body>
 
     <div id="calc">
-        <form>           
-                <label for="num1">num1:</label><br>
-                <input class="num1" type="number" id="num1" name="num1" value=><br>
-                <label for="num2">num2:</label><br>
-                <input class="num2" type="number" id="num2" name="num2" value=><br><br>
-                <button id="1" class="add">ADD</button>
-                <button id="2" class="sub">SUBTRACT</button>
-                <button id="3" class="mul">MULTIPLY</button><br>
+        <form>
+            <label for="num1">num1:</label><br>
+            <input class="num1" type="number" id="num1" name="num1" value=><br>
+            <label for="num2">num2:</label><br>
+            <input class="num2" type="number" id="num2" name="num2" value=><br><br>
+            <button id="1" class="add">ADD</button>
+            <button id="2" class="sub">SUBTRACT</button>
+            <button id="3" class="mul">MULTIPLY</button><br>
 
-                <br>
+            <br>
         </form>
     </div>
     <div id="calc">
-    
-        <table border="1"
-        align="centre">
+
+        <table border="1" align="centre">
             <tr>
-                 <th>Num1</th>
+                <th>Num1</th>
                 <th>Num2</th>
                 <th>Operation</th>
                 <th>Solution</th>
             </tr>
-    
+
             <tr>
                 <td class="x"></td>
                 <td class="y"></td>
@@ -45,7 +46,7 @@
     {{#obj}}
     {{/obj}}
     <script>
-       
+
         $(document).ready(() => {
 
             $(".add").click(function (event) {
@@ -98,6 +99,7 @@
                 });
             });
         })
+
     </script>
 </body>
 
